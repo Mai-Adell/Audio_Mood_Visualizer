@@ -5,7 +5,7 @@ Our graduation project targets visualizing emotions' domain. "Audio-Mood Visuali
 1-	Apply recent advances in speech emotion recognition research.<br>
 2-	Visualize the recognized emotions (Happy, Sad, Fearful, Calm, Angry) through the generation of avatars with facial expressions that correspond to the detected emotion.<br>
 3-	Create an application where the user could communicate with people and all his/her emotions are delivered to them through an avatar without needing to open the camera.<br>
-4-	Experiment with additional features to further personalize the avatars while preserving the identity of the original speaker.<<br>
+4-	Experiment with additional features to further personalize the avatars while preserving the identity of the original speaker.<br>
 
 ## Main Modules/Functionalities
 1-	Extract Emotions (happy, sad, angry, fearful, calm) from Audio<br>
