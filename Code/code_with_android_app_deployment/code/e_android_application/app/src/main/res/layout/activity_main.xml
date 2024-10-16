@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/background_gray"
+    >
+
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/bottom_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mbn_circleColor="@color/background_default_pink"
+        app:mbn_backgroundBottomColor="@color/background_bottom_bar"
+        app:mbn_countBackgroundColor="@color/white"
+        app:mbn_countTextColor="#ffffff"
+        app:mbn_defaultIconColor="@color/start_color"
+        app:mbn_rippleColor="#2f424242"
+        app:mbn_selectedIconColor="@color/end"
+        app:mbn_shadowColor="@color/black"
+        android:layout_alignParentBottom="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/real_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Real time" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="310dp"
+                android:layout_height="269dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/profile_boy_img"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/profileName"
+                android:layout_width="271dp"
+                android:layout_height="63dp"
+                android:layout_marginStart="88dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:text="  Nourhan Adel"
+                android:textSize="29sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileImage" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintTop_toBottomOf="@id/profileName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"/>
+
+
+            <EditText
+                android:id="@+id/editPersonalInfo2"
+                android:layout_width="289dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="28dp"
+                android:background="@android:color/transparent"
+                android:hint="Edit Personal Info"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:drawableEndCompat="@drawable/arrow"
+
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+            <EditText
+                android:id="@+id/Customize_Avatar"
+                android:layout_width="291dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:background="@android:color/transparent"
+                android:hint="Customize Avatar"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textSize="20sp"
+                app:drawableEndCompat="@drawable/arrow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.425"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editPersonalInfo2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="45dp"
+                android:layout_height="43dp"
+                android:layout_marginEnd="68dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/pen_profile_img" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="35dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="52dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/Customize_Avatar"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                app:layout_constraintVertical_bias="0.035"
+                app:srcCompat="@drawable/img_3_profile" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="35dp"
+                android:layout_height="28dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.64"
+                app:srcCompat="@drawable/img_6_profile" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="100dp"
+            android:gravity="center"
+            android:background="@color/background_gray">
+
+            <Button
+                android:id="@+id/btn_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/upload_btn_layout"
+                android:layout_weight="0"
+                android:text="Upload"
+                android:textAllCaps="false"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/btn_rec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/record_btn_pressedon_layout"
+                android:layout_weight="0"
+                android:text="Record"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentHomeView"
+            android:name="com.iti.home_gp_test.home_upload_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_gray"/>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Start_Up">
+
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="329dp"
+        android:layout_height="73dp"
+        android:text="     Audio_Mood"
+        android:textColor="@color/background_default_pink"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.411" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="219dp"
+        android:layout_height="57dp"
+        android:text="  Visualizer"
+        android:textSize="40dp"
+        android:textColor="@color/background_default_pink"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t1"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <Button
+        android:id="@+id/login2"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="88dp"
+        android:backgroundTint="@color/background_default_pink"
+        android:text="login"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_button"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/sign2"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/white"
+        android:text="sigin up"
+        android:textColor="@color/background_default_pink"
+        android:background="@drawable/rounded_button"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

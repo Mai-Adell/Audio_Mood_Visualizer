@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color_gradient"
+    tools:context=".choose_avatar_female">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:context=".MainActivity"
+        >
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/button"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/glass"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+
+                <ImageView
+                    android:id="@+id/small_girl"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/small_girl" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/button"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="331dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/glass"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+
+                <ImageView
+                    android:id="@+id/middle_girl"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:src="@drawable/middle_girl"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/button"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="331dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/glass"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+
+                <ImageView
+                    android:id="@+id/oldest_girl"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:src="@drawable/oldest_girl"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+PLEASE READ THE README FILE 
+
+python == 3.7.12
+pyaudio == 0.2.11 
+ffmpeg == 1.4
+imageio-ffmpeg == 0.4.9
+decorator == 4.4.2
