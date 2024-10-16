@@ -10,8 +10,8 @@ Our graduation project targets visualizing emotions' domain. "Audio-Mood Visuali
 1- Preprocessing.<br>
 2- Audio Segmentation.<br> 
 3- Feature Extraction.<br>
-1- Speech Emotion Recognition.<br>
-2- Avatar Generation.<br>
+4- Speech Emotion Recognition.<br>
+5- Avatar Generation.<br>
 
 ## Dataset:
 ### RAVDESS Dataset
