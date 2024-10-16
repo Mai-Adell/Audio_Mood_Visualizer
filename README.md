@@ -20,8 +20,8 @@ Our graduation project targets visualizing emotions' domain. "Audio-Mood Visuali
 * Each expression is produced at two levels of emotional intensity (normal, strong), with an additional neutral expression.<br>
 
 ## Models:
-1- LSTM     accuracy -> 82%
-2- CNN and Multihead-transformer   accuracy -> 95%
+1- LSTM     accuracy -> 82%<br>
+2- CNN and Multihead-transformer   accuracy -> 95%<br>
 
 
 
